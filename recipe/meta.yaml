@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: 619634ef20cd9a7ed1ca4655ddd63ad8912309460e456d45a61a78c602efddcf
+  sha256: 695793ad0cc4e4e62e30b0af49602cec4eddd06faeb5aca8bf01755e73479286
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
