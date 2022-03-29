@@ -21,6 +21,7 @@ requirements:
   run:
     - python
     - tqdm
+    - dataclasses
     - pywin32  # [win]
 
 test:
