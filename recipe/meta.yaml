@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.3.3" %}
+{% set version = "2.3.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: 1e8db8d0dd487731aa8bab65f52299b1af128c9ca01bef172337a083aadb7733
+  sha256: 21b4795db0d195397f7c69dbb3eb117f42a6e6c1eb99f8388dfaafe71d82584a
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   run:
     - python
     - tqdm
+    - dataclasses
     - pywin32  # [win]
 
 test:
