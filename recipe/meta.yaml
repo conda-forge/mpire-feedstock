@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: 67933fbb85ca73655055a3eb9c16905884505a4dc4d8842a44214b8a7748dd65
+  sha256: 8244a2e8f9aeacd8b13e79af590f2c085a9ce2ea2dca92ce4f82a291a280991f
 
 build:
   number: 0
