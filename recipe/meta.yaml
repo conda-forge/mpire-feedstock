@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.4.0" %}
+{% set version = "2.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: 67933fbb85ca73655055a3eb9c16905884505a4dc4d8842a44214b8a7748dd65
+  sha256: 907051a4095779104eddcf5dae37e9d263778d8a51d4acec3e6354f5d45c933c
 
 build:
   number: 0
@@ -20,14 +20,19 @@ requirements:
     - python
   run:
     - python
-    - tqdm
+    - tqdm >=4.27
     - dataclasses
     - pywin32  # [win]
+    - pygments >=2.0
 
 test:
   imports:
     - mpire
     - mpire.dashboard
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/Slimmer-AI/mpire
