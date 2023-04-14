@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.7.0" %}
+{% set version = "2.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: 6ffe7ce92d4b40fcf35d73ebaadf76455d11e4a2c923ef0c9f25b6c885bf5d0f
+  sha256: ac3064125953c7f3ec63a24d7701db9366f29fc1b6209f6f2cffe42561b8613f
 
 build:
   number: 0
@@ -35,7 +35,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/Slimmer-AI/mpire
+  home: https://github.com/sybrenjansen/mpire
   summary: A Python package for easy multiprocessing, but faster than multiprocessing
   license: MIT
   license_file: LICENSE
