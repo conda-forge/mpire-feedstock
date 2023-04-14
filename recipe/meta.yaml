@@ -35,7 +35,7 @@ test:
     - pip check
 
 about:
-  home: https://github.com/Slimmer-AI/mpire
+  home: https://github.com/sybrenjansen/mpire
   summary: A Python package for easy multiprocessing, but faster than multiprocessing
   license: MIT
   license_file: LICENSE
