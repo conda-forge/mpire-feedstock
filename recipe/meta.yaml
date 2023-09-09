@@ -17,9 +17,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.8
   run:
-    - python
+    - python >=3.8
     - tqdm >=4.27
     - pywin32  # [win]
     - pygments >=2.0
