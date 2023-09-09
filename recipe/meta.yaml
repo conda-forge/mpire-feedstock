@@ -11,7 +11,7 @@ source:
   sha256: da3d4fc84710762e490870289dd91b6487d0e21dbea9dcc3178e00948d71d9db
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,6 @@ requirements:
   run:
     - python
     - tqdm >=4.27
-    - dataclasses
     - pywin32  # [win]
     - pygments >=2.0
 
