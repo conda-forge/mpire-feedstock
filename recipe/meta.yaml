@@ -11,6 +11,7 @@ source:
   sha256: 81ae6141a1e9ec38107c0ecfab50a8f3ba42b0041ed86dde6e0af447a063b8d5
 
 build:
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,7 +23,7 @@ requirements:
     - python
     - tqdm >=4.27
     - dataclasses
-    - pywin32  # [win]
+    - pywin32-on-windows
     - pygments >=2.0
 
 test:
