@@ -18,11 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
     - tqdm >=4.27
-    - dataclasses
     - pywin32-on-windows
     - pygments >=2.0
 
