@@ -1,5 +1,5 @@
 {% set name = "mpire" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
-  sha256: fee60e3d82876db4ca163e998fa0b8b771a74c2ee1f2dcc382fe716b192aa257
+  sha256: 029d2d3ef7de4e04866f76ca9141ec4e8bf0d39b5a1128289c85e04257613ccd
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - tqdm >=4.27
-    - pywin32-on-windows
+    - pywin32-on-windows >=301
     - pygments >=2.0
 
 test:
