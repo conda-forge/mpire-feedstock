@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.8
     - tqdm >=4.27
-    - pywin32-on-windows >=301
+    - pywin32-on-windows
     - pygments >=2.0
 
 test:
