@@ -7,20 +7,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mpire-{{ version }}.tar.gz
   sha256: f66a321e93fadff34585a4bfa05e95bd946cf714b442f51c529038eb45773d97
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - tqdm >=4.27
     - pywin32-on-windows
     - pygments >=2.0
@@ -31,6 +31,7 @@ test:
     - mpire.dashboard
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
